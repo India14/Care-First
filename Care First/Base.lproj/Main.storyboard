@@ -8,6 +8,45 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="bYz-I9-CPd">
+            <objects>
+                <viewController id="5nb-hu-nEB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1B-yM-nsH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmK-vC-adA">
+                                <rect key="frame" x="151" y="60" width="112" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-uX-Sd8">
+                                <rect key="frame" x="151" y="157" width="226" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Inspirational quotes">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="27" name="AcademyEngravedLetPlain"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZo-t3-w04"/>
+                        <color key="backgroundColor" red="0.2823529541" green="0.38431376220000002" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G3V-U2-3LX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZV-Sk-Zkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="-152.67857142857142"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Care_First" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,12 +114,15 @@ It will also give methods for self care such as: Planting, painting, journaling,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vse-gO-ftF">
-                                <rect key="frame" x="145" y="578" width="125" height="42"/>
+                                <rect key="frame" x="145" y="578" width="125" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="24"/>
                                 <state key="normal" title="Self Care ☞">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="YJ2-aO-FCZ" kind="show" id="nD2-OJ-QLT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-Aw-QBc">
                                 <rect key="frame" x="159" y="638" width="97" height="41"/>
@@ -128,14 +170,14 @@ It will also give methods for self care such as: Planting, painting, journaling,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFy-Ei-UUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258" y="-153"/>
+            <point key="canvasLocation" x="1299" y="-153"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BW6-bG-EIG">
             <objects>
                 <viewController id="YJ2-aO-FCZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRL-uJ-j2d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Self Care" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-fd-egl">
@@ -189,7 +231,7 @@ It will also give methods for self care such as: Planting, painting, journaling,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U57-0G-ciX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.8695652173915" y="-153.34821428571428"/>
+            <point key="canvasLocation" x="525" y="575"/>
         </scene>
     </scenes>
     <resources>
